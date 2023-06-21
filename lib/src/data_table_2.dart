@@ -129,6 +129,7 @@ class DataTable2 extends DataTable {
     super.showCheckboxColumn = true,
     super.showBottomBorder = false,
     super.dividerThickness,
+    super.dividerColor,
     super.clipBehavior,
     this.minWidth,
     this.scrollController,
@@ -1275,6 +1276,7 @@ class DataTable2 extends DataTable {
             width: dividerThickness ??
                 theme.dataTableTheme.dividerThickness ??
                 _dividerThickness,
+            color: dividerColor,
           );
           final Border border = showBottomBorder
               ? Border(bottom: borderSide)
